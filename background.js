@@ -21,6 +21,8 @@ chrome.runtime.onMessage.addListener(function(request)  {
 	var callback = callbacks.shift();
 	// add a clipping
 	clippings.push( request.highlight );
+	// badge
+	chrome.browserAction.setBadgeText( {text: clippings.length.toString()});
 	// Call the callback function
 	callback( clippings, request );
 });
