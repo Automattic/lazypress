@@ -10,6 +10,6 @@ function onPageInfo( clippings, pageData )  {
 }
 
 $( window ).load(function(){
-	list = $( '#clippings' );
+	list = $( '.quotes' );
 	chrome.extension.getBackgroundPage().getPageInfo( onPageInfo );
 });
