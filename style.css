@@ -1,17 +1,29 @@
-/* Button */
+/* Page */
+
+html{
+	width: 300px;
+}
 
 body{
 	color:#555E6A;
 	width: 250px;
 }
 
+/* Button */
+
 button{
 	background: #00AADC;
+	border: 0;
 	border-radius: 4px;
 	color: #fff;
-	border: 0;
+	cursor:pointer;
+	outline: none;
 	padding: .75em;
 	width:100%;
+}
+
+button:hover{
+	background: #0087BE;
 }
 
 /* Quote List */
