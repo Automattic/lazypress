@@ -48,7 +48,11 @@ chrome.runtime.onMessage.addListener(function(request)  {
 	url = request.url;
 	title = request.title;
 	// badge
+	chrome.browserAction.setBadgeBackgroundColor({
+		color: '#00AADC'
+	});
 	chrome.browserAction.setBadgeText( {text: clippings.length.toString()});
+
 	// Call the callback function
 	callback( clippings, request );
 });
