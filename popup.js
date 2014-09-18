@@ -13,9 +13,15 @@ function render( clippings ) {
 	list.html( html );
 }
 
+function startAPost() {
+	chrome.extension.getBackgroundPage().startAPost();
+}
+
 $( window ).load(function(){
 	var clippings = chrome.extension.getBackgroundPage().getClippings();
 	list = $( '.quotes' );
 	render( clippings );
 	chrome.extension.getBackgroundPage().getPageInfo( onPageInfo );
+
+	$( '.post' ).click( startAPost );
 });
