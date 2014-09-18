@@ -18,6 +18,7 @@ function startAPost() {
 		url: url
 	});
 	clippings = [];
+	chrome.browserAction.setBadgeText( {text: ''});
 }
 
 function getQuotes() {
