@@ -10,6 +10,10 @@ function getPageInfo( callback ) {
 	chrome.tabs.executeScript(null, { file: 'content_script.js' });
 }
 
+function getClippings() {
+	return clippings;
+}
+
 // Perform the callback when a request is received from the content script
 chrome.runtime.onMessage.addListener(function(request)  {
 	// Get the first callback in the callbacks array
