@@ -1,19 +1,28 @@
 /* Button */
 
 body{
-	background: #555E6A;
+	color:#555E6A;
 }
 
 button{
+	background: #00AADC;
+	border-radius: 4px;
+	color: #fff;
+	border: 0;
+	padding: .75em;
 	width:100%;
 }
 
 /* Quote List */
 
-ul{
-
+ul.quotes{
+	list-style-type: none;
+	margin: 1em;
+	padding: 0;
 }
 
 li{
-
+	border-left:3px solid #C6CCD2;
+	margin-bottom: 1em;
+	padding-left:.5em;
 }
