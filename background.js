@@ -13,7 +13,7 @@ function getPageInfo( callback ) {
 
 function startAPost() {
 	var html = getQuotes() + "\n\n" + getViaLink(),
-		url = 'https://wordpress.com/post?text=' + encodeURIComponent( html );
+		url = 'https://wordpress.com/post/?text=' + encodeURIComponent( html );
 	chrome.tabs.create({
 		url: url
 	});
