@@ -1,12 +1,6 @@
-function getSelectionText() {
-	var text = false;
-	if (window.getSelection) {
-		text = window.getSelection().toString();
-	} else if (document.selection && document.selection.type != "Control") {
-		text = document.selection.createRange().text;
-	}
-	if ( text === '' ) {
-	  return false;
-	}
-	return text;
-}
+/* global chrome */
+chrome.runtime.sendMessage({
+	title: document.title,
+	url: document.location.href,
+	highlight: window.getSelection().toString()
+});
