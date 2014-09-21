@@ -1,6 +1,9 @@
 /* Page */
 
 html{
+	font-family:georgia, serif;
+	font-size:14px;
+	line-height: 1.4em;
 	width: 300px;
 }
 
