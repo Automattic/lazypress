@@ -37,8 +37,4 @@ li{
 	border-left:3px solid #C6CCD2;
 	margin-bottom: 1em;
 	padding-left:.5em;
-	width: 250px;
-	white-space: nowrap;
-	overflow: hidden;
- 	text-overflow: ellipsis;
 }
